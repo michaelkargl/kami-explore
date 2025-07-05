@@ -13,7 +13,10 @@
         <Compile Include="FileListView\FileListView.Ui.fs" />
         <Compile Include="FileListView\FileListView.fs" />
         <Compile Include="LogView.fs" />
+        <Compile Include="Configuration.fs" />
         <Compile Include="MainWindow.fs" />
+        <Compile Include="FileSystem.fs" />
+        <Compile Include="App.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>
 

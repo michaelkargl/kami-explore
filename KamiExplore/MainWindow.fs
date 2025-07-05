@@ -36,12 +36,16 @@ type MainWindow() as this =
             Title = "Log"
         )
 
+    let setKeyboardFocusOnFileList: unit =
+        fileListView.CanFocus <- true
+        fileListView.SetFocusOnListView()
+ 
     do
         this.Title <- $"Explorer ({Application.QuitKey} to quit)"
         fileListView.DirectorySelected.Add(directorySelectedEvent.Trigger)
         fileListView.FileSelected.Add(fileSelectedEvent.Trigger)
         fileListView.NavigateToParent.Add(navigateToParentEvent.Trigger)
-        this.SetKeyboardFocusOnFileList()
+        setKeyboardFocusOnFileList
         this.Add(fileListView, logView)
         
 
@@ -53,7 +57,3 @@ type MainWindow() as this =
         fileListView.SetPaths(paths)
 
     member public this.Log(line: string) : unit = logView.Log(line)
-    
-    member public this.SetKeyboardFocusOnFileList(): unit =
-        fileListView.CanFocus <- true
-        fileListView.SetFocusOnListView()
