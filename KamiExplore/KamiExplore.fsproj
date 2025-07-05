@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <RootNamespace>KamiExplore</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="FileListView\FileListView.Shared.fs" />
+        <Compile Include="FileListView\FileListView.Events.fs" />
+        <Compile Include="FileListView\FileListView.State.fs" />
+        <Compile Include="FileListView\FileListView.Ui.fs" />
+        <Compile Include="FileListView\FileListView.fs" />
+        <Compile Include="LogView.fs" />
+        <Compile Include="MainWindow.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="LibGit2Sharp" Version="0.31.0" />
+      <PackageReference Include="Terminal.Gui" Version="2.0.0-develop.4520" />
+    </ItemGroup>
+
+</Project>
