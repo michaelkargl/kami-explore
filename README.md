@@ -19,7 +19,7 @@ A tiny simplistic terminal file browser for use in CLI environments
 pwsh
 
 # shows help
-kexR
+kex
 
 # runs explorer from root directory and saves the
 # selection to the provided output file
