@@ -6,7 +6,7 @@ A tiny simplistic terminal file browser for use in CLI environments
 
 ## Setup for Powershell
 
-1. Open your powershell profile with your favorite editor
+1. Open your powershell profile with your favorite editor (`$PROFILE.CurrentUserCurrentHost`)
 2. Add the code from [Invoke-Explorer.ps1]
 3. Adjust the `$KexExec` parameter to point to your installation
 
@@ -17,11 +17,8 @@ A tiny simplistic terminal file browser for use in CLI environments
 ```sh
 # enter powershell session
 pwsh
-
-# shows help
+# runs explorer from current directory
 kex
-
-# runs explorer from root directory and saves the
-# selection to the provided output file
-kex /
+# runs explorer from /opt dir
+kex /opt
 ```
