@@ -2,6 +2,8 @@
 
 A tiny simplistic terminal file browser for use in CLI environments
 
+![](./termtosvg_recording.svg)
+
 ## Setup for Powershell
 
 1. Open your powershell profile with your favorite editor
@@ -23,5 +25,3 @@ kexR
 # selection to the provided output file
 kex /
 ```
-
-![](./termtosvg_recording.svg)
