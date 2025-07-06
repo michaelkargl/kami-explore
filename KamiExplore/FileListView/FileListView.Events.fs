@@ -1,5 +1,6 @@
 module KamiExplore.FileListViewEvents
 
+open KamiExplore.FileSystem
 open Terminal.Gui.Input
 open KamiExplore.FileListViewShared
 

@@ -7,20 +7,24 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Include="FileSystem.fs" />
         <Compile Include="FileListView\FileListView.Shared.fs" />
         <Compile Include="FileListView\FileListView.Events.fs" />
         <Compile Include="FileListView\FileListView.State.fs" />
         <Compile Include="FileListView\FileListView.Ui.fs" />
-        <Compile Include="FileListView\FileListView.fs" />
         <Compile Include="LogView.fs" />
-        <Compile Include="Configuration.fs" />
         <Compile Include="MainWindow.fs" />
-        <Compile Include="FileSystem.fs" />
-        <Compile Include="App.fs" />
+        <Compile Include="App\App.Configuration.fs" />
+        <Compile Include="App\App.Events.fs" />
+        <Compile Include="App\App.fs" />
         <Compile Include="Program.fs" />
+        <Content Include="..\README.md">
+          <Link>README.md</Link>
+        </Content>
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="CommandLineParser.FSharp" Version="2.9.2-ci-210" />
       <PackageReference Include="LibGit2Sharp" Version="0.31.0" />
       <PackageReference Include="Terminal.Gui" Version="2.0.0-develop.4520" />
     </ItemGroup>

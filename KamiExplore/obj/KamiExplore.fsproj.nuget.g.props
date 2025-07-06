@@ -24,5 +24,6 @@
     <PkgTerminal_Gui Condition=" '$(PkgTerminal_Gui)' == '' ">/home/michael/.nuget/packages/terminal.gui/2.0.0-develop.4520</PkgTerminal_Gui>
     <PkgLibGit2Sharp Condition=" '$(PkgLibGit2Sharp)' == '' ">/home/michael/.nuget/packages/libgit2sharp/0.31.0</PkgLibGit2Sharp>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/michael/.nuget/packages/fsharp.core/9.0.300</PkgFSharp_Core>
+    <PkgCommandLineParser_FSharp Condition=" '$(PkgCommandLineParser_FSharp)' == '' ">/home/michael/.nuget/packages/commandlineparser.fsharp/2.9.2-ci-210</PkgCommandLineParser_FSharp>
   </PropertyGroup>
 </Project>

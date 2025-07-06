@@ -1,11 +1,6 @@
 module KamiExplore.FileListViewShared
 
-open System.IO
-
-type FileItem =
-    { FileInfo: FileInfo
-      DisplayName: string
-      IsDirectory: bool }
+open KamiExplore.FileSystem
 
 type FileListAction =
     | FileSelected of FileItem

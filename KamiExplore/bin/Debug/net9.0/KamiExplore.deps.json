@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "KamiExplore/1.0.0": {
         "dependencies": {
+          "CommandLineParser.FSharp": "2.9.2-ci-210",
           "FSharp.Core": "9.0.300",
           "LibGit2Sharp": "0.31.0",
           "Terminal.Gui": "2.0.0-develop.4520"
@@ -21,6 +22,17 @@
           "lib/netstandard2.0/ColorHelper.dll": {
             "assemblyVersion": "1.8.1.0",
             "fileVersion": "1.8.1.0"
+          }
+        }
+      },
+      "CommandLineParser.FSharp/2.9.2-ci-210": {
+        "dependencies": {
+          "FSharp.Core": "9.0.300"
+        },
+        "runtime": {
+          "lib/netstandard2.0/CommandLine.dll": {
+            "assemblyVersion": "2.9.2.0",
+            "fileVersion": "2.9.2.0"
           }
         }
       },
@@ -782,6 +794,13 @@
       "sha512": "sha512-rblWXd/02TfwJjX53xEfQnbnDRKxCm09VtavV8JaIcmIFWt9efNf6xTQ3WeXgy/she5R31eRTtnizFoUoDrs5w==",
       "path": "colorhelper/1.8.1",
       "hashPath": "colorhelper.1.8.1.nupkg.sha512"
+    },
+    "CommandLineParser.FSharp/2.9.2-ci-210": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-l6AYSpErhLSSwpFg3Me1VxJFHxHm2wKD2lRQpLrHYiobDVZ03AmFWDodDcnqairjX3egZTuiR4cBdA4dTHMxqQ==",
+      "path": "commandlineparser.fsharp/2.9.2-ci-210",
+      "hashPath": "commandlineparser.fsharp.2.9.2-ci-210.nupkg.sha512"
     },
     "FSharp.Core/9.0.300": {
       "type": "package",

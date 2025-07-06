@@ -2,7 +2,7 @@ module KamiExplore.FileListViewState
 
 open System.Collections.Generic
 open System.IO
-open KamiExplore.FileListViewShared
+open KamiExplore.FileSystem
 
 type FileListViewState =
     { Items: FileItem list
@@ -12,19 +12,6 @@ let empty: FileListViewState = {
     Items = []
     SelectedIndex = None
 }
-
-let createFileItem (fileInfo: FileInfo) : FileItem =
-    let isDirectory = Directory.Exists(fileInfo.FullName)
-
-    let displayName =
-        if isDirectory then
-            $"📁 {fileInfo.Name}/"
-        else
-            $"📄 {fileInfo.Name}"
-
-    { FileInfo = fileInfo
-      DisplayName = displayName
-      IsDirectory = isDirectory }
 
 let fromPaths (paths: IEnumerable<FileInfo>) : FileListViewState =
     { Items = paths |> Seq.map createFileItem |> List.ofSeq

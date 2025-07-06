@@ -149,3 +149,4 @@
 /home/michael/workspace/fsharp-space/kami-explore/KamiExplore/obj/Debug/net9.0/KamiExplore.pdb
 /home/michael/workspace/fsharp-space/kami-explore/KamiExplore/obj/Debug/net9.0/KamiExplore.genruntimeconfig.cache
 /home/michael/workspace/fsharp-space/kami-explore/KamiExplore/obj/Debug/net9.0/ref/KamiExplore.dll
+/home/michael/workspace/fsharp-space/kami-explore/KamiExplore/bin/Debug/net9.0/CommandLine.dll

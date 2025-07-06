@@ -40,6 +40,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "CommandLineParser.FSharp": {
+              "target": "Package",
+              "version": "[2.9.2-ci-210, )",
+              "generatePathProperty": true
+            },
             "FSharp.Core": {
               "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",

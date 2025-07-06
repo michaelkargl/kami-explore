@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "1VIv1PCttkc=",
+  "dgSpecHash": "e5r9YTGZ9TY=",
   "success": true,
   "projectFilePath": "/home/michael/workspace/fsharp-space/kami-explore/KamiExplore/KamiExplore.fsproj",
   "expectedPackageFiles": [
     "/home/michael/.nuget/packages/colorhelper/1.8.1/colorhelper.1.8.1.nupkg.sha512",
+    "/home/michael/.nuget/packages/commandlineparser.fsharp/2.9.2-ci-210/commandlineparser.fsharp.2.9.2-ci-210.nupkg.sha512",
     "/home/michael/.nuget/packages/fsharp.core/9.0.300/fsharp.core.9.0.300.nupkg.sha512",
     "/home/michael/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/home/michael/.nuget/packages/jetbrains.annotations/2024.3.0/jetbrains.annotations.2024.3.0.nupkg.sha512",

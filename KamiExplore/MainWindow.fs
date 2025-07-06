@@ -2,12 +2,12 @@ module KamiExplore.MainWindow
 
 open System.Collections.Generic
 open System.IO
+open KamiExplore.FileSystem
 open Terminal.Gui.App
 open Terminal.Gui.Drawing
 open Terminal.Gui.ViewBase
 open Terminal.Gui.Views
-open KamiExplore.FileListView
-open KamiExplore.FileListViewShared
+open KamiExplore.FileListViewUi
 open KamiExplore.LogView
 
 
