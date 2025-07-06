@@ -2,37 +2,26 @@
 
 A tiny simplistic terminal file browser for use in CLI environments
 
+## Setup for Powershell
+
+1. Open your powershell profile with your favorite editor
+2. Add the code from [Invoke-Explorer.ps1]
+3. Adjust the `$KexExec` parameter to point to your installation
+
+[Invoke-Explorer.ps1]: ./KamiExplore/Invoke-Explorer.ps1
+
 ## Use
 
 ```sh
-cd kami-explore/KamiExplore
-# shows help 
-dotnet run
+# enter powershell session
+pwsh
+
+# shows help
+kexR
 
 # runs explorer from root directory and saves the
 # selection to the provided output file
-dotnet run / --outputFile /tmp/kex_selection.txt
+kex /
 ```
 
-## Use in Powershell
-
-```pwsh
-# $PROFILE.CurrentUserCurrentHost
-Function Invoke-Explorer {
-    $resultFile = Join-Path ([System.IO.Path]::GetTempPath()) "kex_result_path.txt"
-    
-    dotnet run -- $PWD --outputFile $resultFile
-    if ( -not (Test-Path -PathType Leaf "$resultFile" )) {
-        return
-    }
-    
-    $resultPath = Get-Content "$resultFile"
-    $isDirectory = Test-Path -PathType Container "$resultPath"
-    $isFile = Test-Path -PathType Leaf "$resultPath"
-    if ($isDirectory) {
-        Set-Location $resultPath
-    } else if ( $isFile ) {
-        Invoke-Item $resultPath
-    }
-}
-```
+![](./termtosvg_recording.svg)
