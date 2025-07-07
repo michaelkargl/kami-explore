@@ -32,9 +32,9 @@ let createFileItem (fileInfo: FileInfo) : FileItem =
 
     let displayName =
         if isDirectory then
-            $"📁 {fileInfo.Name}/"
+            $"{fileInfo.Name} 📁"
         else
-            $"📄 {fileInfo.Name}"
+            $"{fileInfo.Name} 📄"
 
     { FileInfo = fileInfo
       DisplayName = displayName
