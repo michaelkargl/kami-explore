@@ -2,7 +2,7 @@
 
 A tiny simplistic terminal file browser for use in CLI environments
 
-![](./termtosvg_recording.svg)
+![screen recording of a kex session. Recorded with termtosvg](./termtosvg_recording.svg)
 
 ## Setup for Powershell
 
@@ -22,3 +22,11 @@ kex
 # runs explorer from /opt dir
 kex /opt
 ```
+
+## Tech used
+
+- F#
+- Functional Style
+- Terminal.Gui
+- CommandLineParser.FSharp
+- Powershell

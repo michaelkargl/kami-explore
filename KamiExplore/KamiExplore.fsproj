@@ -26,7 +26,6 @@
 
     <ItemGroup>
       <PackageReference Include="CommandLineParser.FSharp" Version="2.9.2-ci-210" />
-      <PackageReference Include="LibGit2Sharp" Version="0.31.0" />
       <PackageReference Include="Terminal.Gui" Version="2.0.0-develop.4520" />
     </ItemGroup>
 
