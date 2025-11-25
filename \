@@ -1,0 +1,1 @@
+KamiExplore --outputFile '/tmp/kex-path.txt' "$1"

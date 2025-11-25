@@ -12,6 +12,11 @@ A tiny simplistic terminal file browser for use in CLI environments
 
 [Invoke-Explorer.ps1]: ./KamiExplore/Invoke-Explorer.ps1
 
+## Setup for Bash / Linux / Mac
+1. Open your bash
+2. Navigate to the project root
+3. `./setup_kex.sh`
+
 ## Use
 
 ```sh
